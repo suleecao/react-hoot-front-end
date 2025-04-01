@@ -1,6 +1,5 @@
 import { useContext } from 'react';
 import { Link } from 'react-router';
-
 import { UserContext } from '../../contexts/UserContext';
 
 const NavBar = () => {
@@ -15,8 +14,8 @@ const NavBar = () => {
     <nav>
       {user ? (
         <ul>
-          <li>Welcome, {user.username}</li>
-          <li><Link to='/'>Dashboard</Link></li>
+          <li><Link to='/'></Link>HOME</li>
+          <li><Link to='/hoots'>HOOTS</Link></li>
           <li><Link to='/' onClick={handleSignOut}>Sign Out</Link></li>
         </ul>
       ) : (
